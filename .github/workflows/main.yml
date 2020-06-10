@@ -25,5 +25,5 @@ jobs:
         if: steps.wait-for-build.outputs.conclusion == 'success'
         with:
           evaluation-data: ${{ steps.react-scripts.outputs.result }}
-          environment: staging
+          environment: production
           pr-number: ${{ steps.react-scripts.outputs.pr-number }}
