@@ -18,10 +18,10 @@ jobs:
         if: steps.wait-for-build.outputs.conclusion == 'success'
       - name: React Scripts evaluator step
         id: react-scripts
-        uses: betrybe/react-scripts-evaluator-action@v3
+        uses: betrybe/react-scripts-evaluator-action@v2
         if: steps.wait-for-build.outputs.conclusion == 'success'
       - name: Store evaluation step
-        uses: betrybe/store-evaluation-action@v2
+        uses: betrybe/store-evaluation-action@v1
         if: steps.wait-for-build.outputs.conclusion == 'success'
         with:
           evaluation-data: ${{ steps.react-scripts.outputs.result }}
