@@ -13,6 +13,10 @@ class MovieList extends Component {
     };
   }
 
+  componentDidMount() {
+    this.moviesApi();
+  }
+
   async moviesApi() {
     this.setState({ movies: await movieAPI.getMovies() });
     this.setState({ loading: false });
@@ -29,12 +33,8 @@ class MovieList extends Component {
     );
   }
 
-  componentDidMount() {
-    this.moviesApi();
-  }
   render() {
     const { movies } = this.state;
-    
     return this.loading(movies);
   }
 }

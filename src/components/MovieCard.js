@@ -4,14 +4,13 @@ import React from 'react';
 class MovieCard extends React.Component {
   render() {
     const { movie } = this.props;
-    console.log(movie);
     return (
       <div data-testid="movie-card">
-        <p>ID: {movie.id}</p>
+        <p>ID: {Number(movie.id)}</p>
         <p>TITLE: {movie.title}</p>
         <p>SUBTITLE: {movie.subtitle}</p>
         <p>SINOPSE: {movie.storyline}</p>
-        <p>RATING: {movie.rating}</p>
+        <p>RATING: {Number(movie.rating)}</p>
         <p>IMG LINK: {movie.imagePath} </p>
       </div>
     );
