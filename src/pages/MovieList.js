@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import MovieCard from '../components/MovieCard';
-
+import Loading from '../components/Loading';
 import * as movieAPI from '../services/movieAPI';
 
 class MovieList extends Component {
@@ -18,12 +18,8 @@ class MovieList extends Component {
     this.setState({ loading: false });
   }
 
-  componentDidMount() {
-    this.moviesApi();
-  }
-  render() {
-    const { movies } = this.state;
-
+  loading(movies) {
+    if (this.state.loading === true) return <Loading />;
     return (
       <div data-testid="movie-list">
         {movies.map((movie) => (
@@ -31,6 +27,15 @@ class MovieList extends Component {
         ))}
       </div>
     );
+  }
+
+  componentDidMount() {
+    this.moviesApi();
+  }
+  render() {
+    const { movies } = this.state;
+    
+    return this.loading(movies);
   }
 }
 
