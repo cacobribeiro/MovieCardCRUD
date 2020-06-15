@@ -40,7 +40,4 @@ class MovieDetails extends Component {
   }
 }
 
-MovieDetails.propTypes = {
-  id: PropTypes.number,
-};
 export default MovieDetails;
