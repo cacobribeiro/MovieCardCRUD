@@ -14,7 +14,7 @@ class MovieDetails extends Component {
   }
   componentDidMount() {}
 
-  async movieGet(id) {
+  async movieGet() {
     const { id } = this.props.match.params;
     this.setState({ movie: await movieAPI.getMovie(id) });
     this.setState({ loading: false });
@@ -40,7 +40,7 @@ class MovieDetails extends Component {
   }
 }
 
-MovieCard.propTypes = {
+MovieDetails.propTypes = {
   id: PropTypes.number,
 };
 export default MovieDetails;
