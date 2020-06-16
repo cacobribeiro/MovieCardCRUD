@@ -1,7 +1,7 @@
+import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Loading } from '../components';
-import PropTypes from 'prop-types';
 import * as movieAPI from '../services/movieAPI';
 
 class MovieDetails extends Component {
