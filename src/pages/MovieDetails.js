@@ -13,7 +13,9 @@ class MovieDetails extends Component {
       movie: '',
     };
   }
-  componentDidMount() {}
+  componentDidMount() {
+    this.movieGet();
+  }
 
   async movieGet() {
     const { id } = this.props.match.params;
