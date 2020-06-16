@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import Loading from '../components/Loading';
 import React, { Component } from 'react';
 
@@ -45,5 +46,11 @@ class EditMovie extends Component {
     );
   }
 }
+
+EditMovie.propTypes = {
+  match: PropTypes.shape({
+    params: PropTypes.any,
+  }),
+};
 
 export default EditMovie;
