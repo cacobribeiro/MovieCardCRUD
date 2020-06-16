@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 class MovieForm extends React.Component {
   constructor(props) {
@@ -93,8 +93,7 @@ class MovieForm extends React.Component {
         <select
           id="movie_genre"
           value={genre}
-          onChange={(event) => this.updateMovie('genre', event.target.value)}
-        >
+          onChange={(event) => this.updateMovie('genre', event.target.value)}>
           <option value="action">Ação</option>
           <option value="comedy">Comédia</option>
           <option value="thriller">Suspense</option>
@@ -127,10 +126,7 @@ class MovieForm extends React.Component {
   renderSubmitButton() {
     return (
       <div>
-        <button
-          type="button"
-          onClick={this.handleSubmit}
-        >
+        <button type="button" onClick={this.handleSubmit}>
           Submit
         </button>
       </div>
