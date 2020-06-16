@@ -23,7 +23,7 @@ MovieCard.propTypes = {
   movie: PropTypes.shape({
     id: PropTypes.number,
     imagePath: PropTypes.string,
-    rating: PropTypes.number,
+    rating: PropTypes.string,
     storyline: PropTypes.string,
     subtitle: PropTypes.string,
     title: PropTypes.string,
