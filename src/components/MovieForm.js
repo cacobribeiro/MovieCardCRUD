@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 // import PropTypes from 'prop-types';
 
@@ -19,7 +20,6 @@ class MovieForm extends React.Component {
 
   renderTitleInput() {
     const { title } = this.state;
-
     return (
       <div>
         <input
@@ -93,8 +93,7 @@ class MovieForm extends React.Component {
         <select
           id="movie_genre"
           value={genre}
-          onChange={(event) => this.updateMovie('genre', event.target.value)}
-        >
+          onChange={(event) => this.updateMovie('genre', event.target.value)}>
           <option value="action">Ação</option>
           <option value="comedy">Comédia</option>
           <option value="thriller">Suspense</option>
@@ -150,5 +149,17 @@ class MovieForm extends React.Component {
     );
   }
 }
+
+MovieForm.propTypes = {
+  movie: PropTypes.shape({
+    id: PropTypes.number,
+    imagePath: PropTypes.string,
+    rating: PropTypes.number,
+    storyline: PropTypes.string,
+    subtitle: PropTypes.string,
+    title: PropTypes.string,
+  }).isRequired,
+  onSubmit: PropTypes.func,
+};
 
 export default MovieForm;

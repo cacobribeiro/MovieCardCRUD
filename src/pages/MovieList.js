@@ -35,6 +35,7 @@ class MovieList extends Component {
 
   render() {
     const { movies } = this.state;
+    console.log(this.state.movies);
     return this.loading(movies);
   }
 }
