@@ -11,9 +11,7 @@ class MovieCard extends React.Component {
           <p>{movie.title}</p>
           <p>{movie.storyline}</p>
           <p>Rating: {Number(movie.rating)}</p>
-          <p>
-            <img alt="Poster Movie" src={movie.imagePath}></img>{' '}
-          </p>
+          <img alt="Poster Movie" src={movie.imagePath} />
         </div>
         <Link to={`/movies/${movie.id}`}>VER DETALHES</Link>
       </div>
