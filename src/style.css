@@ -1,0 +1,35 @@
+body {
+  background-color: ghostwhite;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px auto;
+  width: 90%;
+}
+.moviecard {
+  width: 40%;
+  margin: 20px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 5px;
+}
+.moviecard-p {
+  color: dimgrey;
+}
+.title {
+  font-weight: 800;
+  font-size: 15pt;
+}
+
+.moviecard img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.btn-link {
+  padding: 2px;
+  margin: 5px;
+  border: 1px solid gray;
+}

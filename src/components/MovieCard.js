@@ -6,14 +6,16 @@ class MovieCard extends React.Component {
   render() {
     const { movie } = this.props;
     return (
-      <div data-testid="movie-card">
-        <div>
-          <p>{movie.title}</p>
-          <p>{movie.storyline}</p>
-          <p>Rating: {Number(movie.rating)}</p>
+      <div className="moviecard" data-testid="movie-card">
+        <div className="moviecard-p">
           <img alt="Poster Movie" src={movie.imagePath} />
+          <p className="title">{movie.title}</p>
+          <p className="sinopse">{movie.storyline}</p>
+          <p className="rating">Rating: {movie.rating}</p>
         </div>
-        <Link to={`/movies/${movie.id}`}>VER DETALHES</Link>
+        <Link className="btn-link" to={`/movies/${movie.id}`}>
+          VER DETALHES
+        </Link>
       </div>
     );
   }
@@ -23,7 +25,7 @@ MovieCard.propTypes = {
   movie: PropTypes.shape({
     id: PropTypes.number,
     imagePath: PropTypes.string,
-    rating: PropTypes.string,
+    rating: PropTypes.any,
     storyline: PropTypes.string,
     subtitle: PropTypes.string,
     title: PropTypes.string,
