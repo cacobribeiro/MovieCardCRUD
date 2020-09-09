@@ -36,6 +36,7 @@
   },
   "devDependencies": {
     "@testing-library/react": "^10.0.4",
+    "gh-pages": "^3.1.0",
     "react-router-dom": "^5.1.2"
   }
 }
