@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/MovieCardCRUD/static/css/main.83c4484b.chunk.css",
+    "main.js": "/MovieCardCRUD/static/js/main.8435f606.chunk.js",
+    "main.js.map": "/MovieCardCRUD/static/js/main.8435f606.chunk.js.map",
+    "runtime-main.js": "/MovieCardCRUD/static/js/runtime-main.9a30f0f4.js",
+    "runtime-main.js.map": "/MovieCardCRUD/static/js/runtime-main.9a30f0f4.js.map",
+    "static/js/2.179e996c.chunk.js": "/MovieCardCRUD/static/js/2.179e996c.chunk.js",
+    "static/js/2.179e996c.chunk.js.map": "/MovieCardCRUD/static/js/2.179e996c.chunk.js.map",
+    "index.html": "/MovieCardCRUD/index.html",
+    "precache-manifest.ebab6be8a9fb31c6a86674d5c4e70492.js": "/MovieCardCRUD/precache-manifest.ebab6be8a9fb31c6a86674d5c4e70492.js",
+    "service-worker.js": "/MovieCardCRUD/service-worker.js",
+    "static/css/main.83c4484b.chunk.css.map": "/MovieCardCRUD/static/css/main.83c4484b.chunk.css.map",
+    "static/js/2.179e996c.chunk.js.LICENSE.txt": "/MovieCardCRUD/static/js/2.179e996c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9a30f0f4.js",
+    "static/js/2.179e996c.chunk.js",
+    "static/css/main.83c4484b.chunk.css",
+    "static/js/main.8435f606.chunk.js"
+  ]
+}
